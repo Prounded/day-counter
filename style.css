@@ -1,0 +1,99 @@
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url(backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: lato;
+    text-align: center;
+    margin: 0;
+    user-select: none;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(Lato-Regular.ttf);
+}
+
+.dayDisplayLength{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.countToDayDisplay{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.dayDetails{
+    display: flex;
+    margin-top: 50px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.displayNumberLength{
+    font-size: 25px;
+    width: 50px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.startingDateCounter{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    color: rgb(217, 217, 217);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.progressBarContainer{
+    position: relative;
+    top: 35px;
+    margin: auto;
+    width: 37.5%;
+}
+
+.containerBars{
+    height: 25px;
+    width: 100%;
+    border: 3px solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progressBarInside{
+    height: 100%;
+    background-color: rgb(20, 124, 176);
+    border-radius: 1px;
+    transition: width 0.5s;
+    width: 0%;
+}
+
+.barsPercentage{
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 550px) {
+    .progressBarContainer{
+        width: 80%;
+    }
+
+    .displayNumberLength{
+        font-size: 20px;
+    }
+
+    .dayDetails{
+        font-size: 13px;
+    }
+}
