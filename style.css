@@ -91,10 +91,10 @@ body{
 
     .displayNumberLength{
         font-size: 20px;
+        width: 30px;
     }
 
     .dayDetails{
-        margin-left: 10px;
         font-size: 13px;
     }
 }
